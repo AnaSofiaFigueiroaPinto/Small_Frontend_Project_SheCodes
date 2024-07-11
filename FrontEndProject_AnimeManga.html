@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎎 Anime & Manga 🎎</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-weight: 700;
+            font-size: 36px;
+            color: #385170;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 16px 24px;
+            margin: 10px auto;
+        }
+        h2 {
+            text-align: center;
+            font-weight: 300;
+            color: #142d4c;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 10px auto;
+            padding: 10px 18px;
+            border: 1px solid #142d4c;
+            border-radius: 4px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-top: 30px;
+            border-radius: 10px;
+            max-width: 90%;
+        }
+        p {
+            display: block;
+            font-size: 14px;
+            line-height: 1.5;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button {
+            display: block;
+            margin: 0px auto;
+            margin-bottom: 20px;
+            padding: 16px 24px;
+            border: 1px outset #385170;
+            border-radius: 30px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            background: #385170;
+            font-size: 16px;
+            color: #ececec;
+            transition: all 200ms ease-in-out;
+            line-height: 10px;
+        }
+
+        button:hover {
+            background: #142d4c;
+            opacity: 0.9;
+            color: #ececec;
+            cursor: pointer;
+        }
+        span {
+            color: #385170;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .title {
+            text-decoration: underline #9fd3c7;
+        }
+        .learn-more {
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            color: #385170;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+        .learn-more:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            text-align: center;
+            font-size: smaller;
+            line-height: 20px;
+        }
+        body {
+            background-color: #ececec;
+            background: linear-gradient(#ececec, #9fd3c7);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>
+        🎌
+        <br />
+        <span class="title">Japanese Entertainment</span>
+    </h1>
+    <h2>📺 Anime & Manga 📚</h2>
+    <hr />
+    <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/453/original/your-name-best-japanese-anime-movies-750x430.jpg?1679700460"
+            alt="Anime"
+    />
+    <p align="justify">
+        In Japan the term <strong><em>anime</em></strong> is used to refer to
+        all animation, much like cartoon is in English. Only elsewhere has anime
+        become the term associated exclusively with animation from Japan. There
+        is some debate over whether the term anime can be given to animation not
+        from Japan. Although it technically can, anime has, at least in the
+        English language, become synonymous with Japan. Anime has visually
+        distinct features for characters, and deliberately uses a limited style
+        for depicting movement. In the West, most animations are cartoons used
+        to tell children stories, whereas anime often involves complex
+        storylines and characters with adult themes.
+    </p>
+    <img
+            src=https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/479/original/main-qimg-6c7059d86e3db06911a59d346862d600-lq.jpg?1679703674
+            alt="Manga" />
+    <p align="justify">
+        <strong><em>Manga</em></strong> are comic books rather than animations.
+        Unlike anime, manga is often published in black and white. Why? Because
+        they are usually published weekly and printing them in colour would take
+        too much time and money. Manga is usually fairly cheap to publish and
+        only requires a small number of artists to produce. In fact it can take
+        just one, the mangaka, who is usually both the author and illustrator,
+        as well as filling in other roles of the publishing process.
+    </p>
+    <a
+            href="https://japancraft.co.uk/blog/manga-anime-difference/"
+            target="_blank"
+            class="learn-more"
+    >
+        Learn more on Japan Craft
+    </a>
+    <br />
+    <button class="best-button">
+        👉 Get a list of anime or manga to get started!
+    </button>
+    <hr />
+    <p class="footer">
+        This page was built by <span>Ana Figueiroa Pinto</span>
+    </p>
+</div>
+
+<script>
+    function best() {
+        let name = prompt("What is your name?");
+        let preference = prompt("Do you prefer anime or manga?");
+        let email = prompt("What is your email?");
+
+        if (
+            preference === "anime" ||
+            preference === "manga" ||
+            preference === "Anime" ||
+            preference === "Manga" ||
+            preference === "ANIME" ||
+            preference === "MANGA"
+        ) {
+            alert(
+                "Thank you " +
+                name +
+                "! We will be sending you a list of " +
+                preference +
+                " to your email that may be of your interest to get you started! 🎞📖"
+            );
+        } else {
+            alert("Could you please write your preference again? Thank you!");
+        }
+    }
+    let bestButton = document.querySelector(".best-button");
+    bestButton.addEventListener("click", best);
+</script>
+</body>
+</html>
